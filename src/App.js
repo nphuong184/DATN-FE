@@ -1,11 +1,8 @@
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      mambau
-    </div>
-  );
+  return <div className="App">mambau</div>;
 }
 
 export default App;
