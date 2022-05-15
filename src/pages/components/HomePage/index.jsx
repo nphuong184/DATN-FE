@@ -13,7 +13,7 @@ function HomePage(props) {
         <Header style={{ background: "red" }}>
           <div>
             <Row>
-              <Col span={10}>Menu</Col>
+              <Col span={10}>Menu.</Col>
               <Col span={4}>Branch</Col>
               <Col span={10}>Feature</Col>
             </Row>
