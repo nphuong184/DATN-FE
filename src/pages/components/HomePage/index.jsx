@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Button, DatePicker, version } from "antd";
 
 HomePage.propTypes = {
     
@@ -8,8 +9,10 @@ HomePage.propTypes = {
 function HomePage(props) {
     return (
         <div>
-            HomePage
-        </div>
+      <Button type="primary" style={{ marginLeft: 8 }}>
+      Primary Button
+    </Button>
+  </div>
     );
 }
 
