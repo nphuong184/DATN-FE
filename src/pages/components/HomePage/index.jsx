@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Layout } from "antd";
 import { Row, Col } from "antd";
+import ProductDetail from "../ProductDetail";
 
 const { Header, Footer, Sider, Content } = Layout;
 HomePage.propTypes = {};
@@ -10,7 +11,7 @@ function HomePage(props) {
   return (
     <div>
       <Layout>
-        <Header style={{ background: "red" }}>
+        <Header style={{ background: "#FAF0D7" }}>
           <div>
             <Row>
               <Col span={10}>Menu.</Col>
@@ -20,6 +21,7 @@ function HomePage(props) {
           </div>
         </Header>
       </Layout>
+      <ProductDetail></ProductDetail>
     </div>
   );
 }

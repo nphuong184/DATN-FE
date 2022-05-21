@@ -1,0 +1,17 @@
+.product-detail__gallery {
+  display: flex;
+  .product-gallery__slide--big {
+    flex: 0 0 83%;
+    overflow: hidden;
+    img {
+      height: 600px;
+      object-fit: fill;
+      padding: 0px 15px;
+    }
+  }
+  .product-gallery__slide--small {
+    flex: 0 0 17%;
+    height: 500px;
+    overflow: hidden;
+  }
+}
