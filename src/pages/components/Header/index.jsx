@@ -2,7 +2,9 @@ import {
   ShoppingOutlined,
   SearchOutlined,
   UserSwitchOutlined,
+  HeartOutlined,
 } from "@ant-design/icons";
+import { MenuItem } from "@mui/material";
 import { Col, Dropdown, Input, Layout, Menu, Row, Space } from "antd";
 import React from "react";
 import "./header.scss";
@@ -33,7 +35,7 @@ function Header(props) {
   );
   return (
     <div className="header">
-      <Layout style={{ background: "#FAF0D7" }} className="header-container">
+      <Layout className="header-container">
         <div>
           <Row>
             <Col span={5}>
@@ -43,11 +45,14 @@ function Header(props) {
                 alt="Trang chủ"
               />
             </Col>
-            <Col span={9} className="search-input">
-              <Input
-                placeholder="Tìm kiểm sản phẩm"
-                prefix={<SearchOutlined />}
-              />
+            <Col span={9}>
+              <form action="" method="post" className="search">
+                <Input
+                  className="search-input"
+                  placeholder="Tìm kiểm sản phẩm"
+                  prefix={<SearchOutlined />}
+                />
+              </form>
             </Col>
             <Col span={10}>
               <div className="header-actions">
@@ -58,6 +63,7 @@ function Header(props) {
                         <Space>
                           <UserSwitchOutlined className="item" />
                           <ShoppingOutlined className="item" />
+                          <HeartOutlined className="item" />
                         </Space>
                       </a>
                     </Dropdown>
@@ -65,6 +71,22 @@ function Header(props) {
                 </Row>
               </div>
             </Col>
+          </Row>
+          <Row>
+            <Menu theme="light" mode="horizontal ">
+              <Menu.Item key="1">
+                <span>Áo</span>
+              </Menu.Item>
+              <Menu.Item key="2">
+                <span>Quần</span>
+              </Menu.Item>
+              <Menu.Item key="3">
+                <span>Váy</span>
+              </Menu.Item>
+              <Menu.Item key="4">
+                <span>Áo khoác</span>
+              </Menu.Item>
+            </Menu>
           </Row>
         </div>
       </Layout>

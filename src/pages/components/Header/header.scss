@@ -1,17 +1,34 @@
 .header {
+  // border-bottom: 1px solid #ccc;
   .header-container {
     padding: 20px 50px;
-  }
-  .site-brand {
-    width: 140px;
-  }
-  .search-input {
-  }
-  .header-actions {
-    .item {
-      color: #3a3845;
-      font-size: 20px;
-      padding-top: 10px;
+    background-color: #fff;
+    .site-brand {
+      width: 140px;
+    }
+    .header-actions {
+      .item {
+        color: #1b1a17;
+        font-size: 22px;
+        padding-top: 10px;
+        margin-left: 20px;
+      }
+    }
+    .search &:focus-within {
+      background-color: yellow;
+      .search-input {
+        background: #f5f6f4;
+        color: #767874;
+        input {
+          background: #f5f6f4;
+          // &:focus {
+          //   background-color: yellow;
+          // }
+        }
+      }
+    }
+    .menu {
+      display: inline-block;
     }
   }
 }
